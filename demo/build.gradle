@@ -26,4 +26,8 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compileOnly "org.projectlombok:lombok:1.16.16"
+	optional "org.springframework.boot:spring-boot-configuration-processor"
 }
+
+compileJava.dependsOn(processResources)

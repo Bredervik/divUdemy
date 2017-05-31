@@ -1,0 +1,12 @@
+pageController:
+  msg: "Yaml sier hei"
+  foo: "foo"
+  bar: "bar"
+
+myconfig:
+  secret: ${random.value}
+  app-name: Application name
+  app-description: ${myconfig.app-name} er en megafet app
+  admin-first-name: Anders
+  admin-last-name: Brevik
+  adminMail: fakk@off.com
